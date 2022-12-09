@@ -47,8 +47,10 @@ const generate = async (prompt) => {
   const completion = await completionResponse.json();
   return completion.choices.pop();
 };
+
 const generateCompletionAction = async (info) => {
   try {
+    sendMessage('generating...')
     const { selectionText } = info;
     const basePromptPrefix = `
       Rephrase this text using none of the words from the original text.
@@ -58,9 +60,11 @@ const generateCompletionAction = async (info) => {
     const baseCompletion = await generate(
       `${basePromptPrefix}${selectionText}`
     );
+    sendMessage(baseCompletion.text);
     console.log(baseCompletion.text);
   } catch (error) {
     console.log(error);
+    sendMessage(error.toString());
   }
 };
 
