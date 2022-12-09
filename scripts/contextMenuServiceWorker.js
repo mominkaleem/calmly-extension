@@ -40,7 +40,7 @@ const generate = async (prompt) => {
       model: "text-davinci-003",
       prompt: prompt,
       max_tokens: 4000,
-      temperature: 0.7,
+      temperature: 0.5,
     }),
   });
 
