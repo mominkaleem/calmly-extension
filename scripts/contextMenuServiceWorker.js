@@ -1,4 +1,3 @@
-// Function to get + decode API key
 const getKey = () => {
   return new Promise((resolve, reject) => {
     chrome.storage.local.get(["openai-key"], (result) => {
@@ -53,9 +52,10 @@ const generateCompletionAction = async (info) => {
     sendMessage('generating...')
     const { selectionText } = info;
     const basePromptPrefix = `
-      Rephrase this text using none of the words from the original text.
+      Rephrase the following text so that the output has none of the words from the input.
   
-      Text:
+      Text to rephrase: The Fitness Gram Pacer Test is a multi-stage aerobic capacity assessment that gets increasingly difficult as it progresses.
+      Output: The Fitness Gram Pacer Test is an examination of one’s physical cardio health that gets harder as time goes on.
       `;
     const baseCompletion = await generate(
       `${basePromptPrefix}${selectionText}`
