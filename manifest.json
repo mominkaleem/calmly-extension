@@ -1,6 +1,6 @@
 {
   "name": "JetList Task Expander",
-  "description": "Type in a task. We will provide the steps to complete it.",
+  "description": "Highlight to rephrase this text",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -11,7 +11,7 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Generate a to-do list"
+    "default_title": "Rephrase this text"
   },
   "background": {
     "service_worker": "scripts/contextMenuServiceWorker.js"
