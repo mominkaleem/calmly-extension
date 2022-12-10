@@ -2,10 +2,6 @@
 
 it's a browser extension that rephrases stuff in the Calmly online writer
 
-## Why did I build this?
-
-https://twitter.com/nabeelqu/status/1600347250806300672?s=20&t=CpIHEqBpsDc8Md-DG780RA
-
 ## Usage 🤝
 
 1. clone this repo
