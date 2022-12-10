@@ -3,15 +3,10 @@
   "description": "Highlight to rephrase this text",
   "version": "1.0",
   "manifest_version": 3,
-  "icons": {
-    "48": "assets/48.png",
-    "72": "assets/72.png",
-    "96": "assets/96.png",
-    "144": "assets/144.png"
-  },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Rephrase this text"
+    "default_title": "Rephrase this text",
+    "default-icon": "./assets/money.png"
   },
   "background": {
     "service_worker": "scripts/contextMenuServiceWorker.js"
