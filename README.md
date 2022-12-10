@@ -1,6 +1,28 @@
-# buildspace 
-### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project. 
+## What is this?
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://buildspace.so/p/build-ai-writing-assistant-gpt3) and link your Discord account so you can get access to helpful channels and your instructor!
+it's a browser extension that rephrases stuff in the Calmly online writer
+
+## Why did I build this?
+
+https://twitter.com/nabeelqu/status/1600347250806300672?s=20&t=CpIHEqBpsDc8Md-DG780RA
+
+## Usage 🤝
+
+1. clone this repo
+2. head to `chrome://extensions`
+3. hit `developer mode` in top right
+4. add the root of this repo in `load unpacked extension`
+5. click the extension icon in your browser to add your openai api key
+6. highlight the text you want to rephrase
+7. click 'Rephrase this text'
+
+
+### Notes
+
+- This only works in the Calmly online writer at the moment
+
+https://www.calmlywriter.com/online/
+
+
+- I want to get this working inside ChatGPT. If you know how to do that already, throw up a PR! :D
+
